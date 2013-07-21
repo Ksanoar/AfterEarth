@@ -13,6 +13,8 @@ int main(void) {
 			case sf::Event::Closed:
 				Window->close();
 				break;
+			default:
+				break;
 			}
 		}
 		
