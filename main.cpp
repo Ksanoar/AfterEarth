@@ -11,6 +11,9 @@ float dt = 0.0f;
 sf::Time lastTime, currTime;
 sf::Clock Clock;
 
+float fps = 0.0f, fpsTime = 0.0f;
+unsigned int frames = 0;
+
 int main(void) {
 	Window = new sf::RenderWindow(sf::VideoMode(WIDTH, HEIGHT, BPP), TITLE, STYLE);
 	Event  = new sf::Event;
@@ -36,7 +39,14 @@ int main(void) {
 
 			render(dt);
 
+			++frames;
+			fpsTime += dt;
 
+			if(fpsTime >= 1.0f) {
+				fps = frames/fpsTime;
+				frames = 0;
+				fpsTime = 0.0f;
+			}
 		}
 	}
 
