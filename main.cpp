@@ -4,7 +4,7 @@
 sf::RenderWindow* Window = NULL;
 sf::Event*        Event  = NULL;
 
-void (*render)(float dt) = NULL; 
+void (*render)(float dt) = NULL;
 
 float dt = 0.0f;
 

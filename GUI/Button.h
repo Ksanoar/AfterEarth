@@ -17,7 +17,6 @@ public:
 	Button(float x, float y, float w, float h, std::string fname, std::string fname_hi) : _x(x), _y(y), _w(w), _h(h) { 
 		_tex.loadFromFile(fname);
 		_tex_hi.loadFromFile(fname_hi);
-		_spr.setTexture(_tex);
 
 		mouseon = false;
 		clicked = false;
