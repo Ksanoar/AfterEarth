@@ -8,7 +8,7 @@ int main(void) {
 	Event  = new sf::Event;
 
 	while(Window->isOpen()) {
-		while(Window->pollEvent(*Event)) {
+		if(Window->pollEvent(*Event)) {
 			switch(Event->type) {
 			case sf::Event::Closed:
 				Window->close();
@@ -17,9 +17,12 @@ int main(void) {
 				break;
 			}
 		}
-		
-		Window->display();
-		Window->clear();
+		else {
+
+
+			Window->display();
+			Window->clear();
+		}
 	}
 
 	delete Window;
