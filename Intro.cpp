@@ -1,7 +1,6 @@
 #include "Scene.h"
 
-void IntroLogic() {
-}
-
-void IntroRender(sf::RenderWindow* pWindow) {
+void IntroRender(float dt) {
+	Window->display();
+	Window->clear();
 }

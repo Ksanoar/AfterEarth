@@ -14,5 +14,4 @@
 extern sf::RenderWindow* Window;
 extern sf::Event*        Event;
 
-extern void (*render)(sf::RenderWindow* pWindow);
-extern void (*logic)(void);
+extern void (*render)(float dt);

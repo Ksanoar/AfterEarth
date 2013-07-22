@@ -3,7 +3,6 @@
 #include "engine.h"
 
 // Intro.
-void IntroRender(sf::RenderWindow* pWindow);
-void IntroLogic();
+void IntroRender(float dt);
 
 // Menu.
