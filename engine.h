@@ -1,3 +1,5 @@
+#pragma once
+
 #include <SFML\System.hpp>
 #include <SFML\Graphics.hpp>
 #include <SFML\Window.hpp>
@@ -10,3 +12,7 @@
 #define STYLE  sf::Style::Default
 
 extern sf::RenderWindow* Window;
+extern sf::Event*        Event;
+
+extern void (*render)(sf::RenderWindow* pWindow);
+extern void (*logic)(void);
