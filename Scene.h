@@ -6,3 +6,4 @@
 void IntroRender(float dt);
 
 // Menu.
+void MenuRender(float dt);
