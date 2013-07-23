@@ -15,7 +15,7 @@ public:
 class AABB {
 public:
 	static bool check(const Object2D& a, const Object2D& b) {
-		if(fabs(a.x - b.x) < (a.w/2 + b.w/2) && fabs(a.y - b.y) < (a.h/2 + b.h/2)) return true;
-		return false;
+		return (!(a.x > b.x + b.w || a.y  > b.y + b.h || a.x + a.w < b.x || a.y + a.h < b.y)); // TODO: Check with second object != (x, y, 1, 1);
 	}
 };
+
