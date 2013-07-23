@@ -18,7 +18,7 @@ int main(void) {
 	Window = new sf::RenderWindow(sf::VideoMode(WIDTH, HEIGHT, BPP), TITLE, STYLE);
 	Event  = new sf::Event;
 
-	render = IntroRender;
+	render = MenuRender;
 
 	lastTime = Clock.getElapsedTime();
 
